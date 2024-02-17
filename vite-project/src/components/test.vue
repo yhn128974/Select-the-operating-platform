@@ -6,7 +6,9 @@
 
     <Pagination></Pagination>
 
-
+    <div class="container">
+      <div id="demo"></div>
+    </div>
   </div>
 </template>
 
@@ -14,4 +16,10 @@
 // import SvgIcon from "@/components/SvgIcon/index.vue";
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: #444;
+}
+</style>
