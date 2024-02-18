@@ -16,7 +16,7 @@ console.log(import.meta.env);
 <style scoped lang="scss">
 div {
   h1 {
-    $base-color: $color;
+    color: $base-color;
   }
 }
 </style>
