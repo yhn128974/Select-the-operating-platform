@@ -1,22 +1,23 @@
 <template>
-  <div>
-    <h1>hello world！</h1>
-    <el-button type="primary" :icon="Edit" circle />
-    <Test></Test>
-  </div>
+  <div>axios封装测试</div>
 </template>
 
 <script setup lang="ts">
-import { Edit } from "@element-plus/icons-vue";
-import Test from "@/components/test.vue";
-
-console.log(import.meta.env);
+import request from "@/utils/request";
+import { onMounted } from "vue";
+// 当组件挂在完毕测试发一个请求
+onMounted(() => {
+  request({
+    url: "/api/user/login",
+    method: "POST",
+    data: {
+      username: "admin",
+      password: "111111",
+    },
+  }).then((res) => {
+    console.log(res);
+  });
+});
 </script>
 
-<style scoped lang="scss">
-div {
-  h1 {
-    color: $base-color;
-  }
-}
-</style>
+<style scoped></style>
