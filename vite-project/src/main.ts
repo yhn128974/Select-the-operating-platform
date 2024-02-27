@@ -28,4 +28,8 @@ axios({
   },
 });
 
+// 引入路由
+import router from "./router";
+app.use(router);
+
 app.mount("#app");

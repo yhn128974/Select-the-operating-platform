@@ -16,7 +16,8 @@
     "axios": "^1.6.7",
     "element-plus": "^2.5.3",
     "scss": "^0.2.4",
-    "vue": "^3.3.11"
+    "vue": "^3.3.11",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.9",
